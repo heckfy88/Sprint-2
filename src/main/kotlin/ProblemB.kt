@@ -2,7 +2,7 @@ class ProblemB {
 
     fun main() {
         var entryAmount: Int = readln().toInt()
-        val outputArray = ArrayList<String>()
+      
 
         while (entryAmount-- > 0) {
             var ansStr = ""
@@ -11,11 +11,10 @@ class ProblemB {
             for (i in 0 until strSize) {
                 ansStr += ('a' + i % letterNum)
             }
-            outputArray.add(ansStr)
+            println(ansStr)
+           
         }
-        for (el in outputArray) {
-            println(el)
-        }
+       
     }
 
 }
